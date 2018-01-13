@@ -34,7 +34,7 @@
 1. 管理 `git-flow` [Sourcetree](https://www.sourcetreeapp.com)
 1. 制做 icon [Sketch](https://sketchapp.com) <https://makeappicon.com>
 
-![git-flow](/assets/images/1day1app/git-flow.png)
+![git-flow](http://iosdevlog.com/assets/images/1day1app/git-flow.png)
 
 # License
 ---
