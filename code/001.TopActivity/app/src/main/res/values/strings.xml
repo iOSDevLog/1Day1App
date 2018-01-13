@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TopActivity</string>
+    <string name="show_top_activity">Show Top Activity</string>
+    <string name="services_on">Service On</string>
+    <string name="services_off">Serivce Off</string>
+    <string name="top_activity_description">open this to show top activity</string>
+</resources>
