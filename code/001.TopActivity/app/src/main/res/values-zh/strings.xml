@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">当前Activity</string>
+    <string name="top_activity_description">打开此项以显示当前Activity</string>
+    <string name="services_off">辅助服务已关闭</string>
+    <string name="services_on">辅助服务已开启</string>
+    <string name="show_top_activity">显示当前Activity</string>
+</resources>
