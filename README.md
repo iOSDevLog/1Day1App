@@ -1,4 +1,4 @@
-# 1day1app  一天做一个应用
+# *1 Day 1 App* 一天做一个应用
 ---
 
 计划很多，实现很少。
@@ -29,7 +29,7 @@
 
 ## 准备工作
 
-1. 创建 github 仓库<https://github.com/iOSDevLog/1day1app>
+1. 创建 github 仓库<https://github.com/iOSDevLog/1Day1App>
 1. 创建 `.gitignore` 文件 <https://www.gitignore.io>
 1. 管理 `git-flow` [Sourcetree](https://www.sourcetreeapp.com)
 1. 制做 icon [Sketch](https://sketchapp.com) <https://makeappicon.com>
@@ -39,4 +39,4 @@
 # License
 ---
 
-1day1app is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
+*1 Day 1 App* is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
