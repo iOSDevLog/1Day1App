@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">糗事百科</string>
+    <string name="network_error">网络错误</string>
+</resources>
