@@ -16,9 +16,9 @@ data class QBEntity(
 data class Item(
 		val format: String, //word
 		val image: String,
-		val published_at: Int, //1515980402
+		val published_at: Long, //1515980402
 		val tag: String,
-		val user: User,
+		val user: User?,
 		val image_size: Any, //null
 		val id: Int, //119935974
 		val votes: Votes,

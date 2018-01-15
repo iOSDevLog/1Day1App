@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -13,13 +15,74 @@
         android:id="@+id/constraintlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
 
-        <ImageView
-            android:id="@+id/head_imageview"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/iosdevlog" />
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/head_imageview"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/iosdevlog"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/username_textview"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/username_textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/app_name"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintBottom_toTopOf="@+id/username_detail"
+                app:layout_constraintStart_toEndOf="@+id/head_imageview"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/username_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/app_name"
+                android:textSize="@dimen/sp_8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/datetime_textview"
+                app:layout_constraintStart_toEndOf="@+id/head_imageview"
+                app:layout_constraintTop_toBottomOf="@+id/username_textview" />
+
+
+            <TextView
+                android:id="@+id/datetime_textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="2018-01-15\n08:08:08"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/gender_imageview"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/username_textview"
+                app:layout_constraintStart_toEndOf="@+id/username_textview"
+                app:layout_constraintTop_toTopOf="@+id/username_textview"
+                app:srcCompat="@drawable/female" />
+        </android.support.constraint.ConstraintLayout>
 
         <TextView
             android:id="@+id/content_textview"

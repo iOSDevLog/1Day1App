@@ -2,6 +2,7 @@ package com.iosdevlog.qiushibaike
 
 import android.graphics.Color
 import android.os.Bundle
+import android.os.Handler
 import android.support.v4.widget.SwipeRefreshLayout
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
@@ -36,7 +37,7 @@ class MainActivity : AppCompatActivity(), BaseQuickAdapter.RequestLoadMoreListen
         mRecyclerView = findViewById(R.id.recycleview)
         mSwipeRefreshLayout = findViewById(R.id.swipeLayout)
         mSwipeRefreshLayout.setOnRefreshListener(this)
-        mSwipeRefreshLayout.setColorSchemeColors(Color.YELLOW)
+        mSwipeRefreshLayout.setColorSchemeColors(Color.GREEN)
         mRecyclerView.layoutManager = LinearLayoutManager(this)
 
         initAdapter()
@@ -45,7 +46,10 @@ class MainActivity : AppCompatActivity(), BaseQuickAdapter.RequestLoadMoreListen
     override fun onResume() {
         super.onResume()
 
-        onRefresh()
+        Handler().postDelayed({
+            mSwipeRefreshLayout.isRefreshing = true
+            onRefresh()
+        }, 10)
     }
 
     // UncaughtExceptionHandler
@@ -114,7 +118,7 @@ class MainActivity : AppCompatActivity(), BaseQuickAdapter.RequestLoadMoreListen
     private fun initAdapter() {
         pullToRefreshAdapter = PullToRefreshAdapter()
         pullToRefreshAdapter.setOnLoadMoreListener(this, mRecyclerView)
-        pullToRefreshAdapter.openLoadAnimation(BaseQuickAdapter.SLIDEIN_BOTTOM)
+        pullToRefreshAdapter.openLoadAnimation(BaseQuickAdapter.SLIDEIN_RIGHT)
         mRecyclerView.adapter = pullToRefreshAdapter
 
         mRecyclerView.addOnItemTouchListener(object : OnItemClickListener() {
