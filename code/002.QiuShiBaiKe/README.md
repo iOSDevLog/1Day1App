@@ -1,4 +1,4 @@
-# TopActivity
+# QiuShiBaiKe
 ---
 
 第2个应用是 *糗事百科*。
@@ -31,9 +31,14 @@ implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
 implementation 'com.squareup.retrofit2:retrofit:2.3.0'
 implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
 implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+implementation 'com.squareup.picasso:picasso:2.5.2'
 implementation 'com.android.support:recyclerview-v7:27.0.2'
 implementation 'com.android.support:cardview-v7:27.0.2'
 ```
+
+* 创建 *QBEntity*
+
+利用插件[JsonToKotlinClass](https://github.com/wuseal/JsonToKotlinClass)
 
 * 创建 *IQBRequest*
 
@@ -46,7 +51,7 @@ interface IQBRequest {
 
 * 测试 *IQBRequest*
 
-```
+```kotlin
 class QBRequestUnitTest {
 
     private val BASE_URL = "http://m2.qiushibaike.com/"
@@ -83,7 +88,7 @@ class QBRequestUnitTest {
 
 * 创建显示 cell
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/card_view"
@@ -118,7 +123,7 @@ class QBRequestUnitTest {
 
 * 创建*刷新 Adapter*
 
-```
+```kotlin
 class PullToRefreshAdapter : BaseQuickAdapter<Item, BaseViewHolder>(R.layout.qb_cell, ArrayList<Item>()) {
 
     override fun convert(helper: BaseViewHolder, item: Item) {
@@ -130,7 +135,7 @@ class PullToRefreshAdapter : BaseQuickAdapter<Item, BaseViewHolder>(R.layout.qb_
 
 * 在 *activity_main* 添加 `RecyclerView`
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -160,7 +165,7 @@ class PullToRefreshAdapter : BaseQuickAdapter<Item, BaseViewHolder>(R.layout.qb_
 
 * *MainActivity* 初始化
 
-```
+```kotlin
     // LifeCycle
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -194,8 +199,8 @@ class PullToRefreshAdapter : BaseQuickAdapter<Item, BaseViewHolder>(R.layout.qb_
 
 * *MainActivity*实现`BaseQuickAdapter.RequestLoadMoreListener`, 1SwipeRefreshLayout.OnRefreshListener`
 
-```
- // Refresh
+```xml
+    // Refresh
     override fun onLoadMoreRequested() {
         mSwipeRefreshLayout.isEnabled = false
 
@@ -269,7 +274,7 @@ class PullToRefreshAdapter : BaseQuickAdapter<Item, BaseViewHolder>(R.layout.qb_
 
 * （可选）*MainActivity*实现 `Thread.UncaughtExceptionHandler`
 
-```
+```kotlin
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -284,7 +289,7 @@ class PullToRefreshAdapter : BaseQuickAdapter<Item, BaseViewHolder>(R.layout.qb_
 
 * 界面可显时显示最新数据
 
-```
+```kotlin
     override fun onResume() {
         super.onResume()
 
@@ -299,8 +304,7 @@ class PullToRefreshAdapter : BaseQuickAdapter<Item, BaseViewHolder>(R.layout.qb_
 
 参考：<https://gist.github.com/julianshen/5829333>
 
-```
-
+```kotlin
     override fun convert(helper: BaseViewHolder, item: Item) {
         if (item.user != null) {
             val imageView = helper.getView<ImageView>(R.id.head_imageview)
