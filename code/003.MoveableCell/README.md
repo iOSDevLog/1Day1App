@@ -1,15 +1,12 @@
 # MoveableCell
 Long press to Moveable TableView Cell
 
-# screenshot
-
-![screenshot](./screenshot/screenshot.png)
 
 第3个应用是 *长按移动Cell*
 
 源码: <https://github.com/iOSDevLog/1Day1App>
 
-![003.MoveableCell.png](http://upload-images.jianshu.io/upload_images/910914-b65c4ff374efa28a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![003.MoveableCell](../../screenshot/003.MoveableCell.png)
 
 ## 原理
 ---
