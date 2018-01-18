@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">每日一文</string>
+    <string name="tab_text_1">今日</string>
+    <string name="tab_text_2">随机</string>
+    <string name="tab_text_3">日期</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
