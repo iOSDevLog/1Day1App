@@ -15,6 +15,7 @@
 		DE209C842068C5D00052AF78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE209C832068C5D00052AF78 /* main.m */; };
 		DE209C8C2068C64C0052AF78 /* RangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DE209C8B2068C64C0052AF78 /* RangeSlider.m */; };
 		DE209C8F2068C6C10052AF78 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE209C8E2068C6C10052AF78 /* QuartzCore.framework */; };
+		DE209C922068C8220052AF78 /* RangeSliderKnobLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DE209C912068C8220052AF78 /* RangeSliderKnobLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		DE209C8A2068C64C0052AF78 /* RangeSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RangeSlider.h; sourceTree = "<group>"; };
 		DE209C8B2068C64C0052AF78 /* RangeSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RangeSlider.m; sourceTree = "<group>"; };
 		DE209C8E2068C6C10052AF78 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DE209C902068C8220052AF78 /* RangeSliderKnobLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RangeSliderKnobLayer.h; sourceTree = "<group>"; };
+		DE209C912068C8220052AF78 /* RangeSliderKnobLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RangeSliderKnobLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 				DE209C832068C5D00052AF78 /* main.m */,
 				DE209C8A2068C64C0052AF78 /* RangeSlider.h */,
 				DE209C8B2068C64C0052AF78 /* RangeSlider.m */,
+				DE209C902068C8220052AF78 /* RangeSliderKnobLayer.h */,
+				DE209C912068C8220052AF78 /* RangeSliderKnobLayer.m */,
 			);
 			path = CustomSlider;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE209C922068C8220052AF78 /* RangeSliderKnobLayer.m in Sources */,
 				DE209C8C2068C64C0052AF78 /* RangeSlider.m in Sources */,
 				DE209C792068C5D00052AF78 /* ViewController.m in Sources */,
 				DE209C842068C5D00052AF78 /* main.m in Sources */,

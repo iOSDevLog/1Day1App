@@ -8,12 +8,13 @@
 
 #import "RangeSlider.h"
 #import <QuartzCore/QuartzCore.h>
+#import "RangeSliderKnobLayer.h"
 
 @implementation RangeSlider
 {
     CALayer* _trackLayer;
-    CALayer* _upperKnobLayer;
-    CALayer* _lowerKnobLayer;
+    RangeSliderKnobLayer* _upperKnobLayer;
+    RangeSliderKnobLayer* _lowerKnobLayer;
     
     float _knobWidth;
     float _useableTrackLength;
@@ -49,11 +50,13 @@
     _trackLayer.backgroundColor = [UIColor blueColor].CGColor;
     [self.layer addSublayer:_trackLayer];
     
-    _upperKnobLayer = [CALayer layer];
+    _upperKnobLayer = [RangeSliderKnobLayer layer];
+    _upperKnobLayer.slider = self;
     _upperKnobLayer.backgroundColor = [UIColor greenColor].CGColor;
     [self.layer addSublayer:_upperKnobLayer];
     
-    _lowerKnobLayer = [CALayer layer];
+    _lowerKnobLayer = [RangeSliderKnobLayer layer];
+    _lowerKnobLayer.slider = self;
     _lowerKnobLayer.backgroundColor = [UIColor greenColor].CGColor;
     [self.layer addSublayer:_lowerKnobLayer];
     
