@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "RangeSlider.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet RangeSlider *rangeSlider;
 
 @end
 
@@ -16,7 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [_rangeSlider addTarget:self
+                     action:@selector(slideValueChanged:)
+           forControlEvents:UIControlEventValueChanged];
+
+    [self performSelector:@selector(updateState) withObject:nil afterDelay:1.0f];
 }
 
 
@@ -25,5 +33,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)slideValueChanged:(id)control
+{
+    NSLog(@"Slider value changed: (%.2f,%.2f)",
+          _rangeSlider.lowerValue, _rangeSlider.upperValue);
+}
+
+- (void)updateState
+{
+    _rangeSlider.trackHighlightColour = [UIColor redColor];
+    _rangeSlider.curvatiousness = 0.0;
+}
 
 @end
