@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE5AF9722069D646008A3C71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5AF9712069D646008A3C71 /* AppDelegate.m */; };
+		DE5AF9752069D646008A3C71 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5AF9742069D646008A3C71 /* ViewController.m */; };
+		DE5AF9782069D647008A3C71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5AF9762069D647008A3C71 /* Main.storyboard */; };
+		DE5AF97A2069D647008A3C71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5AF9792069D647008A3C71 /* Assets.xcassets */; };
+		DE5AF97D2069D647008A3C71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5AF97B2069D647008A3C71 /* LaunchScreen.storyboard */; };
+		DE5AF9802069D647008A3C71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5AF97F2069D647008A3C71 /* main.m */; };
+		DE5AF9882069D6CA008A3C71 /* SliderControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5AF9872069D6CA008A3C71 /* SliderControl.m */; };
+		DE5AF98B2069D868008A3C71 /* KnobRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5AF98A2069D868008A3C71 /* KnobRenderer.m */; };
+		DE5AF98E2069EAD3008A3C71 /* RotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5AF98D2069EAD3008A3C71 /* RotationGestureRecognizer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE5AF96D2069D646008A3C71 /* SliderControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5AF9702069D646008A3C71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DE5AF9712069D646008A3C71 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DE5AF9732069D646008A3C71 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DE5AF9742069D646008A3C71 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DE5AF9772069D647008A3C71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE5AF9792069D647008A3C71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE5AF97C2069D647008A3C71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE5AF97E2069D647008A3C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5AF97F2069D647008A3C71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE5AF9862069D6CA008A3C71 /* SliderControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SliderControl.h; sourceTree = "<group>"; };
+		DE5AF9872069D6CA008A3C71 /* SliderControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderControl.m; sourceTree = "<group>"; };
+		DE5AF9892069D868008A3C71 /* KnobRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnobRenderer.h; sourceTree = "<group>"; };
+		DE5AF98A2069D868008A3C71 /* KnobRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnobRenderer.m; sourceTree = "<group>"; };
+		DE5AF98C2069EAD3008A3C71 /* RotationGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotationGestureRecognizer.h; sourceTree = "<group>"; };
+		DE5AF98D2069EAD3008A3C71 /* RotationGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotationGestureRecognizer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE5AF96A2069D646008A3C71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE5AF9642069D646008A3C71 = {
+			isa = PBXGroup;
+			children = (
+				DE5AF96F2069D646008A3C71 /* SliderControl */,
+				DE5AF96E2069D646008A3C71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE5AF96E2069D646008A3C71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE5AF96D2069D646008A3C71 /* SliderControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE5AF96F2069D646008A3C71 /* SliderControl */ = {
+			isa = PBXGroup;
+			children = (
+				DE5AF9702069D646008A3C71 /* AppDelegate.h */,
+				DE5AF9712069D646008A3C71 /* AppDelegate.m */,
+				DE5AF9732069D646008A3C71 /* ViewController.h */,
+				DE5AF9742069D646008A3C71 /* ViewController.m */,
+				DE5AF9762069D647008A3C71 /* Main.storyboard */,
+				DE5AF9792069D647008A3C71 /* Assets.xcassets */,
+				DE5AF97B2069D647008A3C71 /* LaunchScreen.storyboard */,
+				DE5AF97E2069D647008A3C71 /* Info.plist */,
+				DE5AF97F2069D647008A3C71 /* main.m */,
+				DE5AF9862069D6CA008A3C71 /* SliderControl.h */,
+				DE5AF9872069D6CA008A3C71 /* SliderControl.m */,
+				DE5AF9892069D868008A3C71 /* KnobRenderer.h */,
+				DE5AF98A2069D868008A3C71 /* KnobRenderer.m */,
+				DE5AF98C2069EAD3008A3C71 /* RotationGestureRecognizer.h */,
+				DE5AF98D2069EAD3008A3C71 /* RotationGestureRecognizer.m */,
+			);
+			path = SliderControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE5AF96C2069D646008A3C71 /* SliderControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5AF9832069D647008A3C71 /* Build configuration list for PBXNativeTarget "SliderControl" */;
+			buildPhases = (
+				DE5AF9692069D646008A3C71 /* Sources */,
+				DE5AF96A2069D646008A3C71 /* Frameworks */,
+				DE5AF96B2069D646008A3C71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SliderControl;
+			productName = SliderControl;
+			productReference = DE5AF96D2069D646008A3C71 /* SliderControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE5AF9652069D646008A3C71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = iOSDevLog;
+				TargetAttributes = {
+					DE5AF96C2069D646008A3C71 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DE5AF9682069D646008A3C71 /* Build configuration list for PBXProject "SliderControl" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE5AF9642069D646008A3C71;
+			productRefGroup = DE5AF96E2069D646008A3C71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE5AF96C2069D646008A3C71 /* SliderControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE5AF96B2069D646008A3C71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5AF97D2069D647008A3C71 /* LaunchScreen.storyboard in Resources */,
+				DE5AF97A2069D647008A3C71 /* Assets.xcassets in Resources */,
+				DE5AF9782069D647008A3C71 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE5AF9692069D646008A3C71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5AF9752069D646008A3C71 /* ViewController.m in Sources */,
+				DE5AF98E2069EAD3008A3C71 /* RotationGestureRecognizer.m in Sources */,
+				DE5AF9802069D647008A3C71 /* main.m in Sources */,
+				DE5AF9882069D6CA008A3C71 /* SliderControl.m in Sources */,
+				DE5AF9722069D646008A3C71 /* AppDelegate.m in Sources */,
+				DE5AF98B2069D868008A3C71 /* KnobRenderer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE5AF9762069D647008A3C71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5AF9772069D647008A3C71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE5AF97B2069D647008A3C71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5AF97C2069D647008A3C71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE5AF9812069D647008A3C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DE5AF9822069D647008A3C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE5AF9842069D647008A3C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8W3A83N2L;
+				INFOPLIST_FILE = SliderControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevlog.SliderControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE5AF9852069D647008A3C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8W3A83N2L;
+				INFOPLIST_FILE = SliderControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevlog.SliderControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE5AF9682069D646008A3C71 /* Build configuration list for PBXProject "SliderControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5AF9812069D647008A3C71 /* Debug */,
+				DE5AF9822069D647008A3C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5AF9832069D647008A3C71 /* Build configuration list for PBXNativeTarget "SliderControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5AF9842069D647008A3C71 /* Debug */,
+				DE5AF9852069D647008A3C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE5AF9652069D646008A3C71 /* Project object */;
+}
