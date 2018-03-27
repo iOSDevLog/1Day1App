@@ -10,36 +10,79 @@ import UIKit
 import QuartzCore
 
 class RangeSlider: UIControl {
-
-    var minimumValue = 0.0
-    var maximumValue = 1.0
-    var lowerValue = 0.2
-    var upperValue = 0.8
     
-    let trackLayer = CALayer()
-    
+    let trackLayer = RangeSliderTrackLayer()
     let lowerThumbLayer = RangeSliderThumbLayer()
     let upperThumbLayer = RangeSliderThumbLayer()
     
     var previousLocation = CGPoint()
-    
     var thumbWidth: CGFloat {
         return CGFloat(bounds.height)
+    }
+    var minimumValue: Double = 0.0 {
+        didSet {
+            updateLayerFrames()
+        }
+    }
+    
+    var maximumValue: Double = 1.0 {
+        didSet {
+            updateLayerFrames()
+        }
+    }
+    
+    var lowerValue: Double = 0.2 {
+        didSet {
+            updateLayerFrames()
+        }
+    }
+    
+    var upperValue: Double = 0.8 {
+        didSet {
+            updateLayerFrames()
+        }
+    }
+    
+    var trackTintColor: UIColor = UIColor(white: 0.9, alpha: 1.0) {
+        didSet {
+            trackLayer.setNeedsDisplay()
+        }
+    }
+    
+    var trackHighlightTintColor: UIColor = UIColor(red: 0.0, green: 0.45, blue: 0.94, alpha: 1.0) {
+        didSet {
+            trackLayer.setNeedsDisplay()
+        }
+    }
+    
+    var thumbTintColor: UIColor = UIColor.white {
+        didSet {
+            lowerThumbLayer.setNeedsDisplay()
+            upperThumbLayer.setNeedsDisplay()
+        }
+    }
+    
+    var curvaceousness: CGFloat = 1.0 {
+        didSet {
+            trackLayer.setNeedsDisplay()
+            lowerThumbLayer.setNeedsDisplay()
+            upperThumbLayer.setNeedsDisplay()
+        }
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        lowerThumbLayer.rangeSlider = self
-        upperThumbLayer.rangeSlider = self
-        
-        trackLayer.backgroundColor = UIColor.blue.cgColor
+        trackLayer.rangeSlider = self
+        trackLayer.contentsScale = UIScreen.main.scale
         layer.addSublayer(trackLayer)
         
-        lowerThumbLayer.backgroundColor = UIColor.green.cgColor
+        lowerThumbLayer.rangeSlider = self
+        lowerThumbLayer.contentsScale = UIScreen.main.scale
         layer.addSublayer(lowerThumbLayer)
         
-        upperThumbLayer.backgroundColor = UIColor.green.cgColor
+        upperThumbLayer.rangeSlider = self
+        upperThumbLayer.contentsScale = UIScreen.main.scale
         layer.addSublayer(upperThumbLayer)
         
         updateLayerFrames()
@@ -118,6 +161,8 @@ class RangeSlider: UIControl {
         updateLayerFrames()
         
         CATransaction.commit()
+        
+        sendActions(for: .valueChanged)
         
         return true
     }

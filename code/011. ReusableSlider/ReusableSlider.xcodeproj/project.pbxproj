@@ -14,6 +14,7 @@
 		DE209CAF2068D8D90052AF78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE209CAD2068D8D90052AF78 /* LaunchScreen.storyboard */; };
 		DE209CB72068D9690052AF78 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE209CB62068D9690052AF78 /* RangeSlider.swift */; };
 		DE209CB92068DC5C0052AF78 /* RangeSliderThumbLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE209CB82068DC5C0052AF78 /* RangeSliderThumbLayer.swift */; };
+		DE209CBB2068DDFD0052AF78 /* RangeSliderTrackLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE209CBA2068DDFD0052AF78 /* RangeSliderTrackLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DE209CB02068D8D90052AF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE209CB62068D9690052AF78 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
 		DE209CB82068DC5C0052AF78 /* RangeSliderThumbLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderThumbLayer.swift; sourceTree = "<group>"; };
+		DE209CBA2068DDFD0052AF78 /* RangeSliderTrackLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderTrackLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				DE209CB02068D8D90052AF78 /* Info.plist */,
 				DE209CB62068D9690052AF78 /* RangeSlider.swift */,
 				DE209CB82068DC5C0052AF78 /* RangeSliderThumbLayer.swift */,
+				DE209CBA2068DDFD0052AF78 /* RangeSliderTrackLayer.swift */,
 			);
 			path = ReusableSlider;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE209CA72068D8D90052AF78 /* ViewController.swift in Sources */,
+				DE209CBB2068DDFD0052AF78 /* RangeSliderTrackLayer.swift in Sources */,
 				DE209CB72068D9690052AF78 /* RangeSlider.swift in Sources */,
 				DE209CA52068D8D90052AF78 /* AppDelegate.swift in Sources */,
 				DE209CB92068DC5C0052AF78 /* RangeSliderThumbLayer.swift in Sources */,
@@ -283,7 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J8W3A83N2L;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ReusableSlider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevlog.ReusableSlider;
@@ -298,7 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J8W3A83N2L;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ReusableSlider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevlog.ReusableSlider;
