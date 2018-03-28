@@ -25,6 +25,13 @@
 		DE0BCCE8206A3B1A0013777D /* RWKnobRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC23563206A362F0085C4DC /* RWKnobRenderer.h */; };
 		DE0BCCE9206A3B1A0013777D /* RWRotationGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC23565206A362F0085C4DC /* RWRotationGestureRecognizer.h */; };
 		DE0BCCEA206A3B1A0013777D /* StaticLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC23554206A35E10085C4DC /* StaticLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE0BCD7F206B64430013777D /* OCFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DE0BCD7D206B64430013777D /* OCFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE0BCD83206B64960013777D /* RWKnobControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC23562206A362F0085C4DC /* RWKnobControl.m */; };
+		DE0BCD84206B64960013777D /* RWKnobRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC23564206A362F0085C4DC /* RWKnobRenderer.m */; };
+		DE0BCD85206B64960013777D /* RWRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC23566206A362F0085C4DC /* RWRotationGestureRecognizer.m */; };
+		DE0BCD86206B64B70013777D /* RWKnobControl.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC23561206A362F0085C4DC /* RWKnobControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE0BCD87206B64B70013777D /* RWKnobRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC23563206A362F0085C4DC /* RWKnobRenderer.h */; };
+		DE0BCD88206B64B70013777D /* RWRotationGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC23565206A362F0085C4DC /* RWRotationGestureRecognizer.h */; };
 		DEC23557206A35E10085C4DC /* StaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEC23554206A35E10085C4DC /* StaticLibrary.h */; };
 		DEC2355F206A36090085C4DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC2355E206A36090085C4DC /* UIKit.framework */; };
 		DEC23567206A362F0085C4DC /* RWKnobControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC23562206A362F0085C4DC /* RWKnobControl.m */; };
@@ -46,6 +53,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DE0BCD7B206B64430013777D /* OCFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE0BCD7D206B64430013777D /* OCFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCFramework.h; sourceTree = "<group>"; };
+		DE0BCD7E206B64430013777D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEC23551206A35E10085C4DC /* libStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC23554206A35E10085C4DC /* StaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibrary.h; sourceTree = "<group>"; };
 		DEC2355E206A36090085C4DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -58,6 +68,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DE0BCD77206B64430013777D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEC2354E206A35E10085C4DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,10 +86,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE0BCD7C206B64430013777D /* OCFramework */ = {
+			isa = PBXGroup;
+			children = (
+				DE0BCD7D206B64430013777D /* OCFramework.h */,
+				DE0BCD7E206B64430013777D /* Info.plist */,
+			);
+			path = OCFramework;
+			sourceTree = "<group>";
+		};
 		DEC23548206A35E10085C4DC = {
 			isa = PBXGroup;
 			children = (
 				DEC23553206A35E10085C4DC /* StaticLibrary */,
+				DE0BCD7C206B64430013777D /* OCFramework */,
 				DEC23552206A35E10085C4DC /* Products */,
 				DEC2355D206A36090085C4DC /* Frameworks */,
 			);
@@ -82,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				DEC23551206A35E10085C4DC /* libStaticLibrary.a */,
+				DE0BCD7B206B64430013777D /* OCFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +158,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE0BCD78206B64430013777D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE0BCD7F206B64430013777D /* OCFramework.h in Headers */,
+				DE0BCD86206B64B70013777D /* RWKnobControl.h in Headers */,
+				DE0BCD87206B64B70013777D /* RWKnobRenderer.h in Headers */,
+				DE0BCD88206B64B70013777D /* RWRotationGestureRecognizer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		DE0BCD7A206B64430013777D /* OCFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE0BCD80206B64430013777D /* Build configuration list for PBXNativeTarget "OCFramework" */;
+			buildPhases = (
+				DE0BCD76206B64430013777D /* Sources */,
+				DE0BCD77206B64430013777D /* Frameworks */,
+				DE0BCD78206B64430013777D /* Headers */,
+				DE0BCD79206B64430013777D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCFramework;
+			productName = OCFramework;
+			productReference = DE0BCD7B206B64430013777D /* OCFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		DEC23550206A35E10085C4DC /* StaticLibrary */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEC2355A206A35E10085C4DC /* Build configuration list for PBXNativeTarget "StaticLibrary" */;
@@ -165,6 +222,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					DE0BCD7A206B64430013777D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					DEC23550206A35E10085C4DC = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -185,9 +246,20 @@
 			targets = (
 				DEC23550206A35E10085C4DC /* StaticLibrary */,
 				DE0BCD35206B2DC00013777D /* Aggregate */,
+				DE0BCD7A206B64430013777D /* OCFramework */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE0BCD79206B64430013777D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		DE0BCD34206B2C880013777D /* Build Framework */ = {
@@ -221,6 +293,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DE0BCD76206B64430013777D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE0BCD83206B64960013777D /* RWKnobControl.m in Sources */,
+				DE0BCD84206B64960013777D /* RWKnobRenderer.m in Sources */,
+				DE0BCD85206B64960013777D /* RWRotationGestureRecognizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEC2354D206A35E10085C4DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,6 +329,52 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DE0BCD81206B64430013777D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OCFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevlog.OCFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE0BCD82206B64430013777D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OCFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevlog.OCFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -390,6 +518,15 @@
 			buildConfigurations = (
 				DE0BCD37206B2DC00013777D /* Debug */,
 				DE0BCD38206B2DC00013777D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE0BCD80206B64430013777D /* Build configuration list for PBXNativeTarget "OCFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE0BCD81206B64430013777D /* Debug */,
+				DE0BCD82206B64430013777D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
