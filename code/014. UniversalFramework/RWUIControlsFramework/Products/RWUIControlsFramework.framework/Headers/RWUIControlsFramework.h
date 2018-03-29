@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char RWUIControlsFrameworkVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <RWUIControlsFramework/PublicHeader.h>
 
 #import <RWUIControlsFramework/RWKnobControl.h>
+#import <RWUIControlsFramework/RWRibbonView.h>

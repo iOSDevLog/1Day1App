@@ -12,8 +12,9 @@
 		DE0BCE06206B92360013777D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0BCE04206B92360013777D /* Main.storyboard */; };
 		DE0BCE08206B92360013777D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE0BCE07206B92360013777D /* Assets.xcassets */; };
 		DE0BCE0B206B92360013777D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0BCE09206B92360013777D /* LaunchScreen.storyboard */; };
-		DE0BCE30206B9FF50013777D /* RWUIControlsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0BCE2F206B9FF50013777D /* RWUIControlsFramework.framework */; };
-		DE0BCE32206BA0110013777D /* RWUIControlsFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE0BCE2F206B9FF50013777D /* RWUIControlsFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DE5D3727206C920C00FAB511 /* RWUIControlsBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE5D3726206C920C00FAB511 /* RWUIControlsBundle.bundle */; };
+		DE5D3729206C946900FAB511 /* RWUIControlsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5D3728206C946900FAB511 /* RWUIControlsFramework.framework */; };
+		DE5D372B206C947A00FAB511 /* RWUIControlsFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE5D3728206C946900FAB511 /* RWUIControlsFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DE0BCE32206BA0110013777D /* RWUIControlsFramework.framework in Embed Frameworks */,
+				DE5D372B206C947A00FAB511 /* RWUIControlsFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,7 +39,8 @@
 		DE0BCE07206B92360013777D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE0BCE0A206B92360013777D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE0BCE0C206B92360013777D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE0BCE2F206B9FF50013777D /* RWUIControlsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RWUIControlsFramework.framework; sourceTree = "<group>"; };
+		DE5D3726206C920C00FAB511 /* RWUIControlsBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RWUIControlsBundle.bundle; sourceTree = "<group>"; };
+		DE5D3728206C946900FAB511 /* RWUIControlsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RWUIControlsFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE0BCE30206B9FF50013777D /* RWUIControlsFramework.framework in Frameworks */,
+				DE5D3729206C946900FAB511 /* RWUIControlsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +58,7 @@
 		DE0BCDF4206B92360013777D = {
 			isa = PBXGroup;
 			children = (
+				DE7C232D206CA01200C4C902 /* Resources */,
 				DE0BCDFF206B92360013777D /* RWUIControlsDemo */,
 				DE0BCE12206B924C0013777D /* Frameworks */,
 				DE0BCDFE206B92360013777D /* Products */,
@@ -86,9 +89,17 @@
 		DE0BCE12206B924C0013777D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DE0BCE2F206B9FF50013777D /* RWUIControlsFramework.framework */,
+				DE5D3728206C946900FAB511 /* RWUIControlsFramework.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE7C232D206CA01200C4C902 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE5D3726206C920C00FAB511 /* RWUIControlsBundle.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 			files = (
 				DE0BCE0B206B92360013777D /* LaunchScreen.storyboard in Resources */,
 				DE0BCE08206B92360013777D /* Assets.xcassets in Resources */,
+				DE5D3727206C920C00FAB511 /* RWUIControlsBundle.bundle in Resources */,
 				DE0BCE06206B92360013777D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

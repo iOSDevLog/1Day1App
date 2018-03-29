@@ -8,3 +8,4 @@
 
 #import <UIKit/UIKit.h>
 #import "RWKnobControl.h"
+#import "RWRibbonView.h"

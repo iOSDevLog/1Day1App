@@ -29,12 +29,22 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleImage" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-o5-OW9">
                                 <rect key="frame" x="84" y="230" width="207" height="207"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26l-l3-R07" customClass="RWRibbonView">
+                                <rect key="frame" x="67.5" y="20" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="6O6-nG-zq7"/>
+                                    <constraint firstAttribute="width" constant="240" id="Q5D-Zw-Xdp"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ypp-Bn-UdB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7ta-0U-fuI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ypp-Bn-UdB" secondAttribute="bottom" constant="20" id="9Zs-Kh-LXr"/>
+                            <constraint firstItem="26l-l3-R07" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mmy-hd-tgf"/>
                             <constraint firstItem="cAx-o5-OW9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ph9-X5-y4n"/>
+                            <constraint firstItem="26l-l3-R07" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="g5H-aQ-7V1"/>
                             <constraint firstItem="cAx-o5-OW9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oQP-B2-xOL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -42,6 +52,7 @@
                     <connections>
                         <outlet property="imageView" destination="cAx-o5-OW9" id="3u0-3G-1pd"/>
                         <outlet property="knobControl" destination="ypp-Bn-UdB" id="wve-Db-WHy"/>
+                        <outlet property="ribbonView" destination="26l-l3-R07" id="5hK-84-LS8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

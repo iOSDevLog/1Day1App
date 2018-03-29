@@ -8,9 +8,9 @@
 
 import UIKit
 import RWUIControlsFramework
-//import OCFramework
 
 class ViewController: UIViewController {
+    @IBOutlet weak var ribbonView: RWRibbonView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var knobControl: RWKnobControl!
 
@@ -22,6 +22,12 @@ class ViewController: UIViewController {
         knobControl.minimumValue = CGFloat(-Double.pi/4)
         knobControl.maximumValue = CGFloat(Double.pi/4)
         knobControl.addTarget(self, action: #selector(rotationAngleChanged(_:)), for: .valueChanged)
+    
+        let iv = UIImageView(frame: imageView?.bounds ?? CGRect.zero)
+        iv.image = #imageLiteral(resourceName: "sampleImage")
+        iv.contentMode = .scaleAspectFit
+        ribbonView?.addSubview(iv)
+
     }
 
     @objc
