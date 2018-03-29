@@ -1,0 +1,6 @@
+framework module RWUIControlsFramework {
+  umbrella header "RWUIControlsFramework.h"
+
+  export *
+  module * { export * }
+}
