@@ -1,23 +1,46 @@
 # Xcode 9 制作 iOS 通用 Framework
 ---
 
+
 # 创建 Framework
 ---
 
-![Framework.png](../../screenshot/014. UniversalFramework/Framework.png)
-
+![Framework](https://raw.githubusercontent.com/iOSDevLog/1Day1App/develop/screenshot/014.UniversalFramework/Framework.png)
 ## 设置
 
 添加 `.h` `.m` `.swift` 文件
 
-![Build Phases.png](../../screenshot/014.UniversalBuild Phases/Build Phases.png)
+![Build Phases](https://raw.githubusercontent.com/iOSDevLog/1Day1App/develop/screenshot/014.UniversalFramework/Build%20Phases.png)
+
+```objc
+//
+//  RWUIControlsFramework.h
+//  RWUIControlsFramework
+//
+//  Created by iOS Dev Log on 2018/3/28.
+//  Copyright © 2018年 iOSDevLog. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+//! Project version number for RWUIControlsFramework.
+FOUNDATION_EXPORT double RWUIControlsFrameworkVersionNumber;
+
+//! Project version string for RWUIControlsFramework.
+FOUNDATION_EXPORT const unsigned char RWUIControlsFrameworkVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <RWUIControlsFramework/PublicHeader.h>
+
+#import <RWUIControlsFramework/RWKnobControl.h>
+#import <RWUIControlsFramework/RWRibbonView.h>
+```
 
 # 模拟器和真机通用 Framework
 ---
 
 创建*Cross-platform -> Other -> Aggregate* Target。
 
-![Aggregate.png](../../screenshot/014.UniversalAggregate/Aggregate.png)
+![Aggregate](https://raw.githubusercontent.com/iOSDevLog/1Day1App/develop/screenshot/014.UniversalFramework/Aggregate.png)
 
 添加脚本
 
@@ -65,7 +88,7 @@ open "${INSTALL_DIR}"
 
 要将 bundle 文件与得到的通用 framework 放在同一路径，需要在上面的脚本底部添加：
 
-```
+```bash
 BUNDLE_NAME="bundle name"
 
 # Copy the resources bundle
@@ -81,7 +104,7 @@ ld: -bundle and -bitcode_bundle (Xcode setting ENABLE_BITCODE=YES) cannot be use
 
 需要将 bundle target 的 bitcode 选项设置为 NO：
 
-![Bitcode.png](../../screenshot/014.UniversalBitcode/Bitcode.png)
+![Bitcode](https://raw.githubusercontent.com/iOSDevLog/1Day1App/develop/screenshot/014.UniversalFramework/Bitcode.png)
 
 # 使用 Framework
 ---
@@ -96,7 +119,6 @@ class ViewController: UIViewController {
 }
 ```
 
-
 ## 问题
 
 ```
@@ -107,7 +129,7 @@ dyld: Library not loaded: @rpath/***
 
 将 `framework` 拖入 **Embedded Binaries**
 
-![Embedded.png](../../screenshot/014.UniversalEmbedded/Embedded.png)
+![Embedded](https://raw.githubusercontent.com/iOSDevLog/1Day1App/develop/screenshot/014.UniversalFramework/Embedded.png)
 
 
 ```
