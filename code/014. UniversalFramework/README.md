@@ -10,14 +10,14 @@
 
 添加 `.h` `.m` `.swift` 文件
 
-![Build Phases.png](../../screenshot/014. UniversalBuild Phases/Build Phases.png)
+![Build Phases.png](../../screenshot/014.UniversalBuild Phases/Build Phases.png)
 
 # 模拟器和真机通用 Framework
 ---
 
 创建*Cross-platform -> Other -> Aggregate* Target。
 
-![Aggregate.png](../../screenshot/014. UniversalAggregate/Aggregate.png)
+![Aggregate.png](../../screenshot/014.UniversalAggregate/Aggregate.png)
 
 添加脚本
 
@@ -81,7 +81,7 @@ ld: -bundle and -bitcode_bundle (Xcode setting ENABLE_BITCODE=YES) cannot be use
 
 需要将 bundle target 的 bitcode 选项设置为 NO：
 
-![Bitcode.png](../../screenshot/014. UniversalBitcode/Bitcode.png)
+![Bitcode.png](../../screenshot/014.UniversalBitcode/Bitcode.png)
 
 # 使用 Framework
 ---
@@ -107,7 +107,7 @@ dyld: Library not loaded: @rpath/***
 
 将 `framework` 拖入 **Embedded Binaries**
 
-![Embedded.png](../../screenshot/014. UniversalEmbedded/Embedded.png)
+![Embedded.png](../../screenshot/014.UniversalEmbedded/Embedded.png)
 
 
 ```
