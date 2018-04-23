@@ -1,0 +1,12 @@
+<resources xmlns:android="http;//schemas.android.com/;spk/res/android">
+    <style name="AppBaseTheme" parent="android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/AppBaseTheme.ActionBar</item>
+    </style>
+    <style name="AppBaseTheme.ActionBar" parent="android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#FF333333</item>
+        <item name="android:titleTextStyle">@style/AppBaseTheme.ActionBar.TitleTextStyle</item>
+    </style>
+    <style name="AppBaseTheme.ActionBar.TitleTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFEECCAA</item>
+    </style>
+</resources>

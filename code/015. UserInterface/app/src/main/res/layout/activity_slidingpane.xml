@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="85dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/starstrip"
+        android:orientation="vertical"
+        android:paddingTop="12dip">
+
+        <ImageButton
+            android:id="@+id/ib_earth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:contentDescription="@string/ib_earth"
+            android:src="@drawable/ib_states" />
+
+        <ImageButton
+            android:id="@+id/ib_venus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:contentDescription="@string/ib_venus"
+            android:src="@drawable/ib2_states" />
+
+        <ImageButton
+            android:id="@+id/ib_jupiter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:contentDescription="@string/ib_jupiter"
+            android:src="@drawable/ib3_states" />
+
+        <ImageButton
+            android:id="@+id/ib_neptune"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:contentDescription="@string/ib_neptune"
+            android:src="@drawable/ib4_states" />
+
+        <ImageButton
+            android:id="@+id/ib_mars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:contentDescription="@string/ib_mars"
+            android:src="@drawable/ib5_states" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/uiPane"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/plasma1080"
+        android:orientation="vertical"
+        android:paddingLeft="4dip"
+        android:paddingTop="16dip">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/ib_earth_normal"
+            android:contentDescription="@string/planet_name_earth" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/planet_name_earth"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listviewdiv"
+            android:contentDescription="@string/drawer_layout" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dip"
+            android:paddingTop="12dip"
+            android:shadowColor="#77000000"
+            android:shadowDx="-2.4"
+            android:shadowDy="2.4"
+            android:shadowRadius="1.2"
+            android:text="@string/planet_mass_earth"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dip"
+            android:paddingTop="12dip"
+            android:shadowColor="#77000000"
+            android:shadowDx="-2.4"
+            android:shadowDy="2.4"
+            android:shadowRadius="1.2"
+            android:text="@string/planet_grav_earth"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dip"
+            android:paddingTop="12dip"
+            android:shadowColor="#77000000"
+            android:shadowDx="-2.4"
+            android:shadowDy="2.4"
+            android:shadowRadius="1.2"
+            android:text="@string/planet_size_earth"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+</android.support.v4.widget.SlidingPaneLayout>

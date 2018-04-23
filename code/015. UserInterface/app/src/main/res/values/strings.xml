@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="planets">
+        <item>Earth</item>
+        <item>Venus</item>
+        <item>Jupiter</item>
+        <item>Neptune</item>
+        <item>Mars</item>
+    </string-array>
+    <string name="planet_name_earth">Planet Name: Earth</string>
+    <string name="planet_name_venus">Planet Name: Venus</string>
+    <string name="planet_name_jupiter">Planet Name: Jupiter</string>
+    <string name="planet_name_neptune">Planet Name: Neptune</string>
+    <string name="planet_name_mars">Planet Name: Mars</string>
+    <string name="planet_mass_earth">Planet Mass: 5973 Yg</string>
+    <string name="planet_mass_venus">Planet Mass: 4870 Yg</string>
+    <string name="planet_mass_jupiter">Planet Mass: 1898000 Yg</string>
+    <string name="planet_mass_neptune">Planet Mass: 102000 Yg</string>
+    <string name="planet_mass_mars">Planet Mass: 642 Yg</string>
+    <string name="planet_grav_earth">Planet Gravity: 9.8 m/s</string>
+    <string name="planet_grav_venus">Planet Gravity: 8.9 m/s</string>
+    <string name="planet_grav_jupiter">Planet Gravity: 23.1 m/s</string>
+    <string name="planet_grav_neptune">Planet Gravity: 11.0 m/s</string>
+    <string name="planet_grav_mars">Planet Gravity: 3.7 m/s</string>
+    <string name="planet_size_earth">Planet Diameter: 12,756 KM</string>
+    <string name="planet_size_venus">Planet Diameter: 12,104 KM</string>
+    <string name="planet_size_jupiter">Planet Diameter: 142,984 KM</string>
+    <string name="planet_size_neptune">Planet Diamaeter: 49,528 KM</string>
+    <string name="planet_size_mars">Planet Diameter: 6,972 KM</string>
+    <string name="ib_earth">Earth Button</string>
+    <string name="ib_venus">Venus Button</string>
+    <string name="ib_jupiter">Jupiter Button</string>
+    <string name="ib_neptune">Neptune Button</string>
+    <string name="ib_mars">Mars Button</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="grid_layout">Grid Layout</string>
+    <string name="drawer_layout">Drawer Layout</string>
+    <string name="sliding_layout">SlidingPane Layout</string>
+    <string name="paging_layout">ViewPager Layout</string>
+    <string name="analog_clock_layout">Analog Clock</string>
+    <string name="simpleClockLabel">Simple 3D Clock</string>
+    <string name="worldClockLabel">World 3D Clock</string>
+    <string name="happyClockLabel">Happy 3D Clock</string>
+    <string name="tab_one">DIGITAL</string>
+    <string name="tab_two">ANALOG</string>
+    <string name="app_name">UserInterface</string>
+    <string name="action_red">Blood Red</string>
+    <string name="actionred">RED</string>
+    <string name="action_org">Burnt Orange</string>
+    <string name="actionorg">ORG</string>
+    <string name="action_yel">Banana Yellow</string>
+    <string name="actionyel">YEL</string>
+    <string name="action_grn">Forest Green</string>
+    <string name="actiongrn">GRN</string>
+    <string name="action_blu">Ocean Blue</string>
+    <string name="actionblu">BLU</string>
+    <string name="action_pur">Deep Purple</string>
+    <string name="actionpur">PUR</string>
+    <string name="action_wht">Stark White</string>
+    <string name="actionwht">WHT</string>
+    <string name="action_inv">Invisible!</string>
+    <string name="popup_viz">VISIBLE</string>
+    <string name="popup_inviz">INVISIBLE</string>
+    <string name="popup_gone">GONE</string>
+    <string name="hello_world">Hello World Here\'s the Time!</string>
+    <string name="clockGone">Remove AnalogClock From Layout</string>
+    <string name="clockViz">Restore AnalogClock Visibility</string>
+    <string name="clockInviz">Render AnalogClock Invisible</string>
+    <string name="title_activity_analog_clock">AnalogClockActivity</string>
+    <string name="action_settings">Settings</string>
+</resources>
