@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plasma1080">
+
+    <TextView
+        android:id="@+id/analogView"
+        style="@style/ClockText"
+        android:text="@string/hello_world" />
+
+    <AnalogClock
+        android:id="@+id/analogClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/analogView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/analogclockhoop" />
+
+    <Button
+        android:id="@+id/simpleClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/analogClock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dip"
+        android:text="@string/simpleClockLabel" />
+
+    <Button
+        android:id="@+id/worldClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simpleClock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dip"
+        android:text="@string/worldClockLabel" />
+
+    <Button
+        android:id="@+id/happyClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/worldClock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dip"
+        android:text="@string/happyClockLabel" />
+</RelativeLayout>

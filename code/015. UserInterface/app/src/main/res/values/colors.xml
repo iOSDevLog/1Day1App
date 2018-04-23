@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blood_red">#BB0000</color>    
+    <color name="burnt_orange">#BB6008</color>
+    <color name="banana_yellow">#EEEE00</color>    
+    <color name="forest_green">#53933F</color>
+    <color name="ocean_blue">#2F6699</color>
+    <color name="deep_purple">#BB55AA</color>           
+</resources>

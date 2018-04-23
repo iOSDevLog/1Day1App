@@ -340,3 +340,6 @@ $RECYCLE.BIN/
 
 
 # End of https://www.gitignore.io/api/vim,linux,macos,swift,xcode,windows,android,objective-c,androidstudio
+
+# tar
+*.tar.gz

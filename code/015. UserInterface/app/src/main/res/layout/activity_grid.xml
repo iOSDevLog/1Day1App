@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alignmentMode="alignMargins"
+    android:background="@drawable/stars480"
+    android:columnCount="3"
+    android:columnOrderPreserved="true"
+    android:rowCount="3"
+    android:rowOrderPreserved="true"
+    android:useDefaultMargins="true">
+
+    <ImageButton
+        android:id="@+id/ib_earth"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:background="#FFAACCEE"
+        android:contentDescription="@string/ib_earth"
+        android:src="@drawable/ib_states" />
+
+    <ImageButton
+        android:id="@+id/ib_venus"
+        android:layout_column="2"
+        android:layout_gravity="right|top"
+        android:layout_row="0"
+        android:background="#FFEECCAA"
+        android:contentDescription="@string/ib_venus"
+        android:src="@drawable/ib2_states" />
+
+    <ImageButton
+        android:id="@+id/ib_jupiter"
+        android:layout_column="0"
+        android:layout_gravity="left|bottom"
+        android:layout_row="2"
+        android:background="#FFCCAAEE"
+        android:contentDescription="@string/ib_jupiter"
+        android:src="@drawable/ib3_states" />
+
+    <ImageButton
+        android:id="@+id/ib_neptune"
+        android:layout_column="2"
+        android:layout_gravity="right|bottom"
+        android:layout_row="2"
+        android:background="#FFCCEEAA"
+        android:contentDescription="@string/ib_neptune"
+        android:src="@drawable/ib4_states" />
+
+    <TextView
+        android:id="@+id/tv1_earth"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center"
+        android:layout_marginBottom="180dip"
+        android:layout_row="1"
+        android:background="#00000000"
+        android:text="@string/planet_name_earth"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv2_earth"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center"
+        android:layout_marginBottom="120dip"
+        android:layout_row="1"
+        android:background="#00000000"
+        android:text="@string/planet_mass_earth"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv3_earth"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dip"
+        android:layout_row="1"
+        android:background="#00000000"
+        android:text="@string/planet_grav_earth"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv4_earth"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center"
+        android:layout_row="1"
+        android:background="#00000000"
+        android:text="@string/planet_size_earth"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="visible" />
+</GridLayout>
