@@ -11,7 +11,6 @@
 		1622C3CC1F3269580059889E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1622C3CB1F3269580059889E /* ViewController.swift */; };
 		1622C3CF1F3269580059889E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1622C3CD1F3269580059889E /* Main.storyboard */; };
 		1622C3D11F3269580059889E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1622C3D01F3269580059889E /* Assets.xcassets */; };
-		1622C3D41F3269580059889E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1622C3D21F3269580059889E /* LaunchScreen.storyboard */; };
 		167819161F54F73C009973BB /* StyleTransferInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167819151F54F73C009973BB /* StyleTransferInput.swift */; };
 		16C177951F5F0EA10002C6B9 /* mosaic.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 16C177921F5F0EA10002C6B9 /* mosaic.mlmodel */; };
 		93DD74561F5F40C8004B2891 /* UIImage+scaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DD74551F5F40C8004B2891 /* UIImage+scaling.swift */; };
@@ -20,6 +19,8 @@
 		DE0CCE1220B91E1500FE184D /* candy.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DE0CCE1120B91E1500FE184D /* candy.mlmodel */; };
 		DE0CCE1420B91E2C00FE184D /* udnie.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DE0CCE1320B91E2C00FE184D /* udnie.mlmodel */; };
 		DE0CCE1620B91EEF00FE184D /* la_muse.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DE0CCE1520B91EEF00FE184D /* la_muse.mlmodel */; };
+		DE520AD720FC2F2300018A13 /* ModelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE520AD620FC2F2300018A13 /* ModelCollectionViewCell.swift */; };
+		DE520AD920FC7ECD00018A13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE520AD820FC7ECD00018A13 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,6 @@
 		1622C3CB1F3269580059889E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1622C3CE1F3269580059889E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1622C3D01F3269580059889E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1622C3D31F3269580059889E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1622C3D51F3269580059889E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		167819151F54F73C009973BB /* StyleTransferInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTransferInput.swift; sourceTree = "<group>"; };
 		16C177921F5F0EA10002C6B9 /* mosaic.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = mosaic.mlmodel; sourceTree = "<group>"; };
@@ -38,6 +38,8 @@
 		DE0CCE1120B91E1500FE184D /* candy.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = candy.mlmodel; sourceTree = "<group>"; };
 		DE0CCE1320B91E2C00FE184D /* udnie.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = udnie.mlmodel; sourceTree = "<group>"; };
 		DE0CCE1520B91EEF00FE184D /* la_muse.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = la_muse.mlmodel; sourceTree = "<group>"; };
+		DE520AD620FC2F2300018A13 /* ModelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE520AD820FC7ECD00018A13 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +78,10 @@
 				167819151F54F73C009973BB /* StyleTransferInput.swift */,
 				1622C3CD1F3269580059889E /* Main.storyboard */,
 				1622C3D01F3269580059889E /* Assets.xcassets */,
-				1622C3D21F3269580059889E /* LaunchScreen.storyboard */,
 				1622C3D51F3269580059889E /* Info.plist */,
 				93DD74551F5F40C8004B2891 /* UIImage+scaling.swift */,
+				DE520AD620FC2F2300018A13 /* ModelCollectionViewCell.swift */,
+				DE520AD820FC7ECD00018A13 /* LaunchScreen.storyboard */,
 			);
 			path = StyleTransfer;
 			sourceTree = "<group>";
@@ -154,7 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1622C3D41F3269580059889E /* LaunchScreen.storyboard in Resources */,
+				DE520AD920FC7ECD00018A13 /* LaunchScreen.storyboard in Resources */,
 				1622C3D11F3269580059889E /* Assets.xcassets in Resources */,
 				1622C3CF1F3269580059889E /* Main.storyboard in Resources */,
 			);
@@ -170,6 +173,7 @@
 				16C177951F5F0EA10002C6B9 /* mosaic.mlmodel in Sources */,
 				167819161F54F73C009973BB /* StyleTransferInput.swift in Sources */,
 				1622C3CC1F3269580059889E /* ViewController.swift in Sources */,
+				DE520AD720FC2F2300018A13 /* ModelCollectionViewCell.swift in Sources */,
 				DE0CCE1620B91EEF00FE184D /* la_muse.mlmodel in Sources */,
 				1622C3CA1F3269580059889E /* AppDelegate.swift in Sources */,
 				DE0CCE1220B91E1500FE184D /* candy.mlmodel in Sources */,
@@ -189,14 +193,6 @@
 				1622C3CE1F3269580059889E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1622C3D21F3269580059889E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1622C3D31F3269580059889E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -317,7 +313,7 @@
 				INFOPLIST_FILE = StyleTransfer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.prisma-ai.StyleTransfer";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevlog.StyleTransfer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -332,7 +328,7 @@
 				INFOPLIST_FILE = StyleTransfer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.prisma-ai.StyleTransfer";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdevlog.StyleTransfer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

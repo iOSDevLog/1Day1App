@@ -16,9 +16,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBOutlet weak var loadingView: UIView!
     
-    @IBOutlet var buttons: [UIButton]!
-    
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     private var inputImage = UIImage(named: "input")!
     
@@ -45,20 +44,20 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         loadingView.alpha = 0
         
-        for btn in buttons {
-            btn.imageView?.contentMode = .scaleAspectFill
-        }
+        collectionView.dataSource = self
+        collectionView.delegate = self
     }
     
     // MARK: - Actions
     
-    @IBAction func saveResult(_ sender: Any) {
-        guard let image = imageView.image else {
-            return
+    @IBAction func shareAction(_ sender: Any) {
+        let image = imageView.image
+        
+        let activityVC = UIActivityViewController.init(activityItems: [image as Any], applicationActivities: nil)
+
+        self.present(activityVC, animated: true) {
+            
         }
-        PHPhotoLibrary.shared().performChanges({
-            PHAssetChangeRequest.creationRequestForAsset(from: image)
-        }, completionHandler: nil)
     }
     
     @IBAction func takePhoto(_ sender: Any) {
@@ -102,15 +101,15 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         present(imagePicker, animated: true, completion: nil)
     }
     
-    @IBAction func styleButtonTouched(_ sender: UIButton) {
+    func styleTransfer(_ index: Int) {
         guard let image = inputImage.scaled(to: CGSize(width: imageSize, height: imageSize), scalingMode: .aspectFit).cgImage else {
             print("Could not get a CGImage")
             return
         }
 
-        let model = models[sender.tag]
+        let model = models[index]
         
-        self.title = modelNames[sender.tag]
+        self.title = modelNames[index]
         
         toggleLoading(show: true)
         
@@ -143,6 +142,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             inputImage = image
             imageView.image = image
+            self.title = "StyleTransfer"
         }
 
         picker.dismiss(animated: true, completion: nil)
@@ -193,6 +193,27 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         CVPixelBufferUnlockBaseAddress(pixelBuffer!, CVPixelBufferLockFlags(rawValue: 0))
         
         return pixelBuffer!
+    }
+}
+
+extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return models.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ModelCollectionViewCell", for: indexPath) as! ModelCollectionViewCell
+        
+        cell.modelImageView.image = UIImage(named: modelNames[indexPath.row])
+        cell.modelLabel.text = modelNames[indexPath.row]
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        
+        styleTransfer(indexPath.row)
     }
 }
 
